@@ -41,6 +41,11 @@ class todoservice{
                 return todo;
             return currentTodo;
         })
+        this.todos.todo = this.todos.todo.map((currentTodo,index) => {
+            if(index === id)
+                return todo;
+            return currentTodo;
+        })
     }
 }
 
